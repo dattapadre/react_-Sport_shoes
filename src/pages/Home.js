@@ -59,7 +59,7 @@ import Products_card from "./Products_card";
    <div className="container py-5">
       <div className="row">
 
-       <Products_card data={"/"}/>
+       <Products_card data={"/https://a2zithub.org/dairy/uploads/168259075648183048.jpg"}/>
        <Products_card data={"/"}/>
        <Products_card data={"/"}/>
 
