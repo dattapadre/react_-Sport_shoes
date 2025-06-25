@@ -1,0 +1,72 @@
+/* Orders Page Styling */
+.orders-container {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 120px);
+}
+
+.orders-card {
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
+
+.orders-title {
+  color: #2c3e50;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.orders-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+}
+
+.orders-table {
+  margin-bottom: 0;
+}
+
+.orders-table thead th {
+  background-color: #f1f5f9;
+  color: #4a5568;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.orders-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table tbody td {
+  vertical-align: middle;
+  padding: 1rem;
+  border-color: #edf2f7;
+}
+
+/* Status Badges */
+.badge {
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .orders-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

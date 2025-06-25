@@ -1,0 +1,142 @@
+/* Checkout.css */
+
+/* Main container styling */
+.container.mt-5 {
+    background-color: #f8f9fa;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 1000px;
+}
+
+.container.mt-5:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Form section styling */
+.col-md-6.border-end {
+    padding: 30px;
+    background-color: white;
+}
+
+/* Input field styling */
+.form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    margin-bottom: 15px !important;
+}
+
+.form-control:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.15);
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+}
+
+/* Button styling */
+.btn-dark {
+    background-color: #212529;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.btn-dark:hover {
+    background-color: #343a40;
+    transform: translateY(-2px);
+}
+
+/* Product summary styling */
+.col-md-6.d-flex {
+    padding: 30px;
+    background-color: #f8f9fa;
+}
+
+.border.p-3 {
+    border-radius: 12px !important;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.border.p-3:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image styling */
+.img-fluid.border {
+    border-radius: 10px !important;
+    max-height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-fluid.border:hover {
+    transform: scale(1.03);
+}
+
+/* Text styling */
+h1 {
+    color: #212529;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px !important;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #495057;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-6.border-end {
+        border-right: none !important;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container.mt-5 {
+        margin-top: 20px !important;
+    }
+}
+
+/* Animation for form inputs */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mb-3 {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.mb-3:nth-child(1) { animation-delay: 0.1s; }
+.mb-3:nth-child(2) { animation-delay: 0.2s; }
+.mb-3:nth-child(3) { animation-delay: 0.3s; }
+.mb-3:nth-child(4) { animation-delay: 0.4s; }
+.mb-3:nth-child(5) { animation-delay: 0.5s; }
